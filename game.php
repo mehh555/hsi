@@ -19,7 +19,7 @@ class Game
     {
         $currentFrame = $this->frames[$this->currentFrameIndex];
         if (!$this->validateRoll($currentFrame, $pins)) {
-            echo "W jednej rundzie możesz łącznie zbić maksymalnie 10 kręgli.\n";
+            echo "You can knock down a maximum of 10 pins per round.\n";
             return;
         }
         $currentFrame->addRoll($pins);
